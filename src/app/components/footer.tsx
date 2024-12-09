@@ -11,7 +11,7 @@ export default function Footer() {
   <div className="font-neutral-600">
     <p>
       We have clothes that suit your style and <br />
-      which you're proud to wear. From <br />
+      which you&aposre proud to wear. From <br />
       women to men.
     </p>
     {/* Twitter Icon */}
