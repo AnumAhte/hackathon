@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
+    
     <main className="bg-neutral-200">
       <div className="w-full bg-neutral-200 flex justify-center items-center py-10">
         <div className="w-full max-w-screen-xl sm:px-6 lg:px-0 flex flex-col sm:flex-row lg:flex-row justify-evenly text-black">
@@ -11,7 +12,7 @@ export default function Footer() {
   <div className="font-neutral-600">
     <p>
       We have clothes that suit your style and <br />
-      which you&aposre proud to wear. From <br />
+      which you&apos;re proud to wear. From <br />
       women to men.
     </p>
     {/* Twitter Icon */}
