@@ -16,15 +16,16 @@ function Herro() {
         />
 
         {/* Text Overlay (For Larger Screens) */}
-        <div className="absolute top-[20%] left-[8%] text-left text-black px-4 lg:px-8 hidden lg:block">
-          <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
+        <div className="absolute top-[10%] left-[10%] text-left text-black px-4 lg:px-8 hidden lg:block">
+          <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
             FIND CLOTHES<br /> THAT MATCHES <br /> YOUR STYLE
           </h1>
-          <p className="mt-4 text-sm lg:text-lg text-gray-700 max-w-md">
-            Browse through our diverse range of meticulously crafted garments,
-            designed to bring out your individuality and cater to your sense of
-            style.
+          <p className="mt-4 text-sm  text-gray-700 max-w-3xl">
+            <span className="inline-block">Browse through our diverse range of meticulously crafted garments, designed</span>
+            <br />
+            to bring out your individuality and cater to your sense of style.
           </p>
+
           <button className="mt-6 bg-black text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300">
             Shop Now
           </button>

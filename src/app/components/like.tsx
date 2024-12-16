@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 const LikeSection = () => {
@@ -32,33 +33,45 @@ const LikeSection = () => {
     },
   ];
 
+  const handleAddToCart = (product: { name: string }) => {
+    console.log(`${product.name} added to cart!`);
+  };
+
   return (
     <div className="bg-white min-h-screen py-10">
       <div className="container mx-auto px-4">
         {/* Title */}
         <h1 className="text-3xl font-extrabold text-center mb-8 tracking-wide">
-  YOU MIGHT ALSO LIKE
-</h1>
-
+          YOU MIGHT ALSO LIKE
+        </h1>
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition-shadow"
+              className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition-shadow relative group"
             >
               {/* Product Image */}
-              <div className="mb-4">
+              <div className="relative mb-4 overflow-hidden rounded">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-auto rounded"
+                  className="w-full h-auto rounded transform group-hover:scale-110 transition-transform"
                 />
+                {/* Add to Cart Button on Hover */}
+                <button
+                  onClick={() => handleAddToCart(product)}
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  Add to Cart
+                </button>
               </div>
 
               {/* Product Name */}
-              <h2 className="text-lg font-medium text-gray-800 mb-2">{product.name}</h2>
+              <h2 className="text-lg font-medium text-gray-800 mb-2">
+                {product.name}
+              </h2>
 
               {/* Rating */}
               <div className="flex items-center text-yellow-500 text-sm mb-2">

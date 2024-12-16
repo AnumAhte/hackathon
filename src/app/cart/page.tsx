@@ -118,7 +118,7 @@ const CartPage = () => {
         </div>
 
         {/* Order Summary */}
-        <div className="bg-gray-100 rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
           <div className="space-y-2">
             <div className="flex justify-between">
@@ -148,7 +148,7 @@ const CartPage = () => {
             />
             <button
               onClick={handleApplyPromoCode}
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+              className="w-full bg-neutral-900 text-white py-2 rounded-md hover:bg-neutral-600"
             >
               Apply Promo Code
             </button>
